@@ -296,7 +296,7 @@
             overflow: hidden;
         }
         .slider{
-            width: 5600px;
+            width: 6400px;
             position: absolute;
             left:-800px;
         }
@@ -855,7 +855,7 @@
             index++;
             navmove();
             animate(slider,{left:-800*index},function(){
-                if(index === 7){
+                if(index == 7){
                     slider.style.left = '-800px';
                     index = 1;
                 }
@@ -870,7 +870,7 @@
             index--;
             navmove();
             animate(slider,{left:-800*index},function(){
-                if(index === 0){
+                if(index == 0){
                     slider.style.left = '-4800px';
                     index = 6;
                 }
