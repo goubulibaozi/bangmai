@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>帮5买 首页详情</title>
+    <meta charset="utf-8"/>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        ul,li,ol{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .border1{
+            width:100%;
+        }
+        .border2{
+            width:100%;
+            background-color:#f8f7f6;
+        }
+        .one{
+            width:1180px;
+            margin:0 auto;
+        }
+        .two{
+            width:1180px;
+            margin:0 auto;
+        }
+        .imgcon{
+            width:19px;
+            height:19px;
+            margin-top:10px;
+            float:left;
+        }
+        .wenhao{
+            width:85px;
+            height:34px;
+            float:left;
+            margin-top:20px;
+            color:#b2aec1; 
+            font-size: 12px;
+            text-align:center;
+            border-radius:1px;
+        }
+        .three{
+            width:1180px;
+            margin:0 auto;
+            height:25px;
+            font-size:12px;
+            color:#b2aec1;
+            line-height:25px;
+        }
+        .seven{
+            width:1180px;
+            margin:0 auto;
+            height:180px;
+            border-bottom:1px solid #b2aec1;
+        }
+        .sevena{
+            width:170px;
+            height:180px;
+            float:left;
+        }
+        .sevenb{
+            width:800px;
+            height:180px;
+            float:left;
+        }
+        .sevenc{
+
+            width:210px;
+            height:180px;
+            float:left;
+            text-align:center;
+            margin-top:20px;
+        }
+        .uls{
+            float:left;
+            width:90px;
+            height:180px;
+            margin-left:35px;
+        }
+        .uls li:first-child{
+            float:left;
+            margin-top:30px;
+            font-size:16px;
+            color:black;
+        }
+        .uls li{
+            float:left;
+            margin-top:10px;
+            font-size:14px;
+            color:#666560;
+        }
+        .nine{
+            width:680px;
+            height:40px;
+            margin:0 auto;
+            font-size:14px;
+            color:#666560;
+        }
+        .nine p span{
+            color:#b2aec1;
+            margin-left:5px;
+            margin-right:5px;
+        }
+        .ten{
+            width:550px;
+            height:20px;
+            margin:0 auto;
+            font-size:12px;
+            color:#b2aec1;
+        }
+        .ten p{
+            margin-top:10px;
+        }
+        .end1{
+            width:1100px;
+            margin-left:110px;
+            font-size:12px;
+            color:#b2aec1;
+            margin:0 auto;
+        }
+        .end2{
+            font-size:12px;
+            color:#b2aec1;
+            margin:0 auto;
+            width:200px;
+        }
+        .twelve{
+            width:790px;
+            height:65px;
+            margin:0 auto;
+            margin-top:5px;
+        }
+        .twelve img{
+            float:left;
+            margin-right:6px;
+        }
+        .borderxiangqing{
+            width:100%;
+            height:40px;
+            background-color:#000000;
+        }
+        .pinka{
+            width:1180px;
+            height:40px;
+            margin:0 auto;
+        }
+        .pinkb{
+            width:995px;
+            height:40px;
+            float:left;
+        }
+        .pinkb li{
+            width:100px;
+            height:40px;
+            line-height:40px;
+            font-size:14px;
+            color:#ffffff; 
+            float:left;
+            margin-left:23px;
+            text-align:center;
+        }
+        .pinkb li:first-child{
+            background-color:#fe0d4a;
+            margin-left:0px;
+        }
+        .pinkc{
+            width:165px;
+            height:40px;
+            float:right;
+        }
+        .borderxiangqing1{
+            width:100%;
+            background-color:#f8f7f6;
+        }
+        .text1{
+            width:1180px;
+            height:30px;
+            margin:0 auto;
+            line-height:30px;
+        }
+        .ajpg{
+            width:1180px;
+            margin:0 auto;
+        }
+        .big{
+            width:1180px;
+            margin:0 auto;
+            height:620px;
+        }
+        .bigleft{
+            width:995px;
+            height:620px;
+            float:left;
+            background-color:#ffffff;
+        }
+        .bigright{
+            height:620px;
+            width:180px;
+            float:right;
+            background-color:#ffffff;
+        }
+        .lefta{
+            width:500px;
+            height:620px;
+            float:left;
+        }
+        .sun1{
+            width:460px;
+            height:450px;
+            float:right;
+            border:1px solid #eeeeee;
+        }
+        .sun2{
+            width:460px;
+            height:210px;
+            float:right;
+        }
+        .righta{
+            width:440px;
+            height:620px;
+            float:right;
+        }
+        .price{
+            width:300px;
+            height:30px;
+            font-size:12px;
+        }
+        #choice{
+            width:250px;
+            height:50px;
+        }
+        .buttonpink{
+            width:350px;
+            height:50px;
+        }
+        .buttonpinkone{
+            margin-left:20px;
+            width:150px;
+            height:50px;
+            border:1px solid #ff0754;
+            color:#ff0754;
+            background-color:#ffffff;
+            float:left;
+            border-radius:5px;
+            font-size:20px;
+        }
+        .buttonpinktwo{
+            margin-left:30px;
+            width:150px;
+            height:50px;
+            background-color:#ff0754;
+            color:#ffffff;
+            border:1px solid #ff0754;
+            float:left;
+            border-radius:5px;
+            font-size:20px;
+        }
+        #choosenumber{
+            width:80px;
+            height:20px;
+            line-height:20px;
+            margin-left:50px;
+            float:left;
+        }
+        #jian{
+            width:12px;
+            height:20px;
+            float:left;
+            text-align:center;
+            cursor:pointer;
+        }   
+        #shu{
+            width:30px;
+            height:20px;
+            float:left;
+            text-align:center;
+        }   
+        #jia{
+            width:12px;
+            height:20px;
+            float:left;
+            text-align:center;
+            cursor:pointer;
+        }   
+        #duihao1{
+            width:45px;
+            height:25px;
+            margin-left:20px;
+            border:1px solid #ff0754;
+            float:left;
+            line-height:25px;
+            text-align:center;
+            background:url(./images/duigou.png)no-repeat 32px 12px;
+        }
+        #duihao2{
+            width:45px;
+            height:25px;
+            margin-left:20px;
+            float:left;
+            line-height:25px;
+            text-align:center;
+        }
+        #choose1{
+            line-height: 50px;
+            text-align:center;
+        }
+        #choose2{
+            line-height: 50px;
+            text-align:center;
+            font-size:28px:;
+            color:#ff8e04;
+        }
+        #box{
+            width:500px;
+            height:500px;
+            position:relative;
+        }
+        #slider{
+            cursor: move;
+            display:none; 
+            filter:alpha(opacity=40);
+            width:80px;
+            height:80px;
+            position:absolute;
+            border:1px solid #ccc;
+            left:460px;
+            top:-300px;
+        }
+        #img2{
+            position:absolute;
+            top:0px;
+            left:550px;
+            display:none; 
+            width:460px;
+            height:410px;
+            overflow:hidden;
+        }
+        #Bimg{
+            position:absolute;
+            left:550px;
+            top:200px;
+        }
+        #Bimg2{
+            position:absolute;
+            left:550px;
+            top:200px;
+        }
+        #boor{
+            width:100%;
+            height:1300px;
+            display:none;
+            position:absolute;
+            top:0px;
+            left:0px;
+        }
+        .blackborder{
+            width:100%;
+            height:1300px;
+            background-color:#eeeeee;
+            color:#ffffff;
+            font-size:18px;
+            display:none;
+            position:absolute;
+            top:0px;
+            left:0px;
+            opacity: 0.5;
+        }
+       .checkgoods{
+            width:400px;
+            height:250px;
+            border:2px solid #aca9d3;
+            left:450px;
+            background-color:#ffffff;
+            position:absolute;
+            top:400px;
+            display:none;
+       }
+       .g{
+            margin-top:30px;
+       }
+       .b1{
+            width:150px;
+            height:50px;
+            border:1px solid #ff0754;
+            color:#ff0754; 
+            margin-left:20px;
+            margin-right:50px;
+            margin-top:30px;
+            border-radius: 8px;
+       }
+       .b2{
+            width:150px;
+            height:50px;
+            border:1px solid #ff0754;
+            background-color:#ff0754;
+            color:#ffffff; 
+            margin-top:30px;
+            border-radius: 8px;
+       }
+       #like{
+        width:100%;
+       }
+    </style>
+</head>
+<body>
+    <div id="like">
+        <div class="border1">
+            <div class="one" style="height:35px; line-height:35px;">
+                    <a href="#" style="font-size:12px;color:#b2aec1;"> 帮五买，享帮帮</a>
+                    <div style="float:right;width:775px;">
+                        <div class="imgcon" style="margin-right:20px;background:url(./images/common_min.png) 0 -31px;"></div>
+                        <div class="imgcon" style="margin-right:20px; background:url(./images/common_min.png) 0 -53px;"></div>
+                        <div class="imgcon" style="margin-right:20px; background:url(./images/common_min.png) 0 -75px;"></div>
+                        <a href="#" style="float:left; margin-right:20px;font-size:12px;color:#b2aec1;"> 登录</a>
+                        <a href="#" style="float:left;margin-right:20px;font-size:12px;color:#b2aec1;"> 注册</a>
+                        <div class="imgcon" style="margin-right:3px;margin-top:8px;background:url(./images/common_min.png) 0 -112px;"></div>
+                        <a href="#" style="float:left;margin-right:20px;font-size:12px; color:#b2aec1;">消息</a>
+                        <div class="imgcon" style="margin-top:8px;background:url(./images/dingdan.jpg) no-repeat center;"></div>
+                        <a href="#" style="float:left;margin-right:20px;font-size:12px;color:#b2aec1;"> 我的订单</a>
+                        <a href="#" style="float:left;margin-right:20px;font-size:12px;color:#b2aec1;"> 我的收藏</a>
+                        <a href="#" style="float:left;margin-right:20px;font-size:12px;color:#b2aec1;"> 绑钻兑换</a>
+                        <div class="imgcon" style="margin-top:8px;background:url(./images/tp-my-phone.png) no-repeat center;"></div>
+                        <a href="#" style="float:left;margin-right:20px;font-size:12px;color:#b2aec1;"> 手机版</a>
+                        <a href="#" style="float:left;margin-right:20px;font-size:12px;color:#b2aec1;"> 帮5淘</a>
+                        <a href="#" style="float:left;margin-right:20px;font-size:12px;color:#b2aec1;"> 客户服务</a> 
+                        <div class="imgcon" style="margin-top:8px;background:url(./images/gouwuche.jpg) no-repeat center;"></div>
+                        <a href="#" style="float:left;margin-right:20px;font-size:12px;color:#b2aec1;"> 购物车</a>
+                        <a href="#" style="float:left;font-size:12px;color:#ff4d04;"> 0</a>
+                    </div>
+            </div>
+                    
+            <div class="two" style="height:70px;">
+                    <ul>
+                         <li style="float:left;">
+                             <img src="./images/logo_03.jpg">
+                         </li>
+                         <li style="float:left;margin-left:150px;margin-top:20px;">
+                             <form style="width:490px;">
+                             <input style="float:left; width:375px;height:30px; border:2px solid #ff4d04;" type="text" placeholder="" name="输入商品网址或加关键词，直通全网，快速帮5购！">
+                            <input style="float:left; border:2px solid #ff4d04; width:105px;height:34px;background-color: #ff4d04; color: #ffffff;" type="button" name="" value="搜全网">
+                            </form>
+                        </li>
+                        <li style="float:left;margin-left:140px;">
+                            <div class="wenhao" style="border:0.5px solid #b2aec1;">
+                                <div style="width:20px;height:20px;margin-left:29px;background:url(./images/common_min.png) 0 -94px;"></div>
+                                <span>400-085-0505</span>
+                            </div>
+                            <div class="wenhao" style="border:0.5px solid #b2aec1;">
+                                <div  style="width:20px;height:20px;margin-left:29px;background:url(./images/common_min.png) 0 -112px;"></div>
+                                <span>mc@b5m.com</span>
+                            </div>
+                            <div class="wenhao" style="border:0.5px solid #ff4d04;line-height:34px; background-color:#ff4d04;">
+                                <img src="./images/wenhao.jpg">
+                                <span style="color: #ffffff;">常见问题</span>
+                            </div>
+                        </li>
+                    </ul>
+            </div>
+
+            <div class="three">
+                <p style="margin-left:295px;">
+                    <span style="color:red;"> 洗发护发 </span>
+                    <span> |</span>
+                    <span style="color:red;"> 日本纸尿裤 </span>
+                    <span>| 身体乳 |</span>
+                    <span> 内衣文胸 |</span>
+                    <span style="color:#ebcad6;"> iphone </span>
+                    <span> |</span>
+                    <span style="color:#ebcad6;"> ipad Ai </span>
+                    <span>| 牛仔裤 |</span>
+                    <span>| 奶粉 |</span>
+                    <span> 防晒霜 |</span>
+                    <span> 伞 |</span>
+                    </p>
+            </div>
+        </div>
+
+        <div class="borderxiangqing">
+            <div class="pinka">
+                <ul class="pinkb">
+                    <li><a href="./shouye.html">首页</a></li>  
+                    <li>热门品牌</li>  
+                    <li>美妆个护</li>  
+                    <li>服饰鞋包</li>  
+                    <li>母婴生活</li>  
+                    <li>食品保健</li>  
+                    <li>韩国直邮</li>  
+                    <li>跨境购</li>  
+                </ul>
+                <div class="pinkc">
+                    <img style="float:right;" src="./images/ff_03.jpg">
+                </div>
+            </div>   
+        </div>
+
+        <div class="borderxiangqing1">
+            <div class="text1">
+                <p>首页/精油>防晒>韩国 RE:CIPE 水晶清爽防水防晒喷雾SPF50 150ml/瓶</p>
+            </div>  
+
+            <div class="big">
+                <div class="bigleft">
+                    <div class="lefta">
+                        <div id="box">
+                            <div class="sun1" id="img1">
+                                <img id="be1" src="./images/pp0.jpeg">
+                                <img id="be2" style="display:none;" src="./images/pp1.jpeg">
+                                <div id="slider">
+                                </div>
+                            </div>
+                            <div id="img2">
+                                <img id="Bimg" style="display:block;" src="./images/big.jpeg">
+                                <img style="display:none;" id="Bimg2" src="./images/big02.jpeg">
+                            </div>
+                        </div>
+
+                        <div class="sun2" id="sun2">
+                            <img id="pop1" style="float:left;" src="./images/spanl.jpg">
+                            <img id="pop2" style="float:left;border:1.5px solid #ff9003;" src="./images/sp0.jpeg">
+                            <img id="pop3" style="float:left;" src="./images/sp1.jpeg">
+                            <img id="pop4" style="float:right;" src="./images/spanr.jpg">
+                        </div>
+                    </div>
+                    <div class="righta">
+                        <p>韩国 RE:CIPE 水晶清爽防水防晒喷雾SPF50 150ml/瓶</p>
+                        <p style="margin-top:13px;width:400px;font-size:12px;color:#666560;">【限购3件】 超透明无痕防晒，防水防汗定妆，保湿降温不黏腻。水晶防晒喷雾，喷后皮肤水润，不油，不留白，更不会像防晒霜那样抹不开，非常实用，开始存货吧。</p>
+                        <div class="price">
+                            <p style="margin-top:20px;"><span style="color:#a7547c;margin-left:20px;">价格</span> <span style="color:#ff0000;margin-left:20px;font-size:14px;">¥71</span><span style="color:#a7547c;text-decoration:line-through;margin-left:20px;">¥150</span></p>
+                        </div>
+                        <img src="./images/ss_09.jpg">
+                        <div class="price" style="color:#a7547c;">
+                            <p> 
+                            <span style="margin-left:20px;float:left;">化妆品净含量</span></p>
+                            <div id="duihao1">150ml</div>
+                            <div id="duihao2">200ml</div>
+                        </div>
+                        <div class="price" style="color:#a7547c;margin-top:15px;">
+                            <p style="margin-left:20px;float:left;">数量</p>
+
+                            <div id="choosenumber">
+                                <form>
+                                    <input id="jian" type="text" name="" value="-">
+                                    <input id="shu" type="text" name="" value="1">
+                                    <input id="jia" type="text" name="" value="+">
+                                </form>
+                            </div>
+
+                            <p style="margin-left:20px; float:left;">件 <span style="margin-left:20px;">（库存5件）</span></p>
+                        </div>
+                        <img src="./images/oo_03.jpg">
+
+                        <div id="choice">
+                            <p id="choose1">您已选择 <span style="color:#ff8e04">"</span><span id="choose2">150ml</span> <span style="color:#ff8e04">"</span>  </p>
+                        </div>
+
+                        <div class="buttonpink">
+                            <input class="buttonpinkone" type="button" value="立即购买">
+                            <input id="love" class="buttonpinktwo" type="button" value="加入购物车">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="bigright">
+                    <img src="./images/ww_07.jpg">
+                </div>
+            </div>   
+
+            <div class="ajpg">
+                <img src="./images/a_07.jpg">
+            </div>     
+        </div>
+
+        <div class="border2">
+            <div class="seven">
+                <div class="sevena">
+                    <img src="./images/loginB.jpg">
+                </div>
+                <div class="sevenb">
+                    <ul class="uls">
+                        <li>购物指南</li>
+                        <li>如何下单</li>
+                        <li>帮5购流程</li>
+                        <li>订单查询</li>
+                        <li>物流配送</li>
+                    </ul>
+                    <ul class="uls">
+                        <li>支付相关</li>
+                        <li>支付方式</li>
+                        <li>安全设置</li>
+                        <li>账户信息</li>
+                    </ul>
+                    <ul class="uls">
+                        <li>售后服务</li>
+                        <li>取消订单</li>
+                        <li>申请售后</li>
+                        <li>退货流程</li>
+                        <li>退款相关</li>
+                    </ul>
+                    <ul class="uls">
+                        <li>VIP服务</li>
+                        <li>VIP优惠</li>
+                        <li>如何成为VIP</li>
+                        <li>超级帮钻</li>
+                    </ul>
+                    <ul class="uls">
+                        <li>帮韩品</li>
+                        <li>韩国正品</li>
+                        <li>闪电发货</li>
+                        <li>帮韩品售后</li>
+                    </ul>
+                    <ul class="uls">
+                        <li>更多</li>                  
+                        <li>帮5采APP</li>
+                        <li>手机APP</li>
+                        <li>帮5淘插件</li>
+                        <li>其他</li>
+                    </ul>
+                </div>
+                <div class="sevenc">
+                    <img src="./images/erweima.jpg">
+                </div>
+            </div>
+
+            <div class="nine">
+                <p>关于帮我买   <span>|</span>   联系我们   <span>|</span>   合作商家   <span>|</span>   友情链接   <span>|</span>   加入我们   <span>|</span>   移动应用   <span>|</span>   热门   <span>|</span>   广告联盟   <span>|</span>   使用条款</p>
+            </div>
+
+            <div class="ten">
+                <p>Copyright © 2011-2015 B5M.COM All rights reserved.Powered by B5Mosft Co.,Ltd.</p>
+            </div>
+
+            <div class="eleven">
+               <p class="end1">增值电信业务经营许可证：沪B2-20130065号| 中华人民共和国互联网药品信息服务资格证书（沪）-非经营性2013-0034沪卫（中医）网审【2015】10032号 沪ICP备11034776号-3 | 食品流通许可证</p>
+                <p class="end2">sp3101151410301755</p>
+            </div>
+
+            <div class="twelve">
+                <img style="margin-top:5px;" src="./images/bo1.gif">
+                <img style="margin-top:12px;" src="./images/bo2.png">
+                <img style="margin-top:10px;" src="./images/bo3.gif">
+                <img style="margin-top:5px;" src="./images/bo4.png">
+                <img style="margin-top:12px;" src="./images/bo5.png">
+                <img style="margin-top:12px;" src="./images/bo6.png">
+                <img src="./images/bo7.png">
+            </div>
+        </div>
+    </div>
+    <div id="boor">
+        <div class="blackborder" id="blackborder">   
+        </div>
+        <div class="checkgoods" id="checkgoods">
+            <a href="./xiangqing.html">
+            <input style="margin-left:380px;width:20px;height:20px;border:none;background-color:#ffffff;" type="button" name="" value="X"></a>
+            <img class="g" src="./images/rr11_02.jpg">
+            <form>
+                <a href="./xiangqing.html"><input type="button" class="b1" value="继续购物"></a>
+                <input type="button" class="b2" value="去购物车结算">
+            </form>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    // 选择化妆品净含量
+    var duihao1 = document.getElementById("duihao1");
+    var duihao2 = document.getElementById("duihao2");
+    var choose1 = document.getElementById("choose1");
+    var choose2 = document.getElementById("choose2");
+    duihao2.onclick = function(){
+        choose2.innerHTML = "200ml";
+        duihao2.style.background = "url(./images/duigou.png)no-repeat 32px 12px";
+        duihao2.style.border = "1px solid #ff0754";
+        duihao1.style.background = "none";
+        duihao1.style.border = "none";
+
+    }
+     duihao1.onclick = function(){
+        choose2.innerHTML = "150ml";
+        duihao1.style.background = "url(./images/duigou.png)no-repeat 32px 12px";
+        duihao1.style.border = "1px solid #ff0754";
+        duihao2.style.background = "none";
+        duihao2.style.border = "none";
+    }
+</script>
+<script type="text/javascript">
+    // 商品数量选择
+    var jian = document.getElementById("jian");
+    var shu = document.getElementById("shu");
+    var jia = document.getElementById("jia");
+    
+    jian.onclick = function(){
+        var number = parseInt(shu.value);
+        var numbers = number-1;
+        shu.value = numbers;
+        if(numbers<=0)
+        {
+            jian.style.cursor = "no-drop";
+            shu.value = "1";
+        }
+        else{
+            jian.style.cursor = "pointer";
+        }
+    }
+     jia.onclick = function(){
+        var number = parseInt(shu.value);
+        var numbers = number+1;
+        shu.value = numbers;
+        if(numbers >= 5)
+        {
+            jia.style.cursor = "no-drop";
+            shu.value = "5";
+        }
+        else{
+            jia.style.cursor = "pointer";
+        }
+    }
+</script>
+<script type="text/javascript">
+    //放大镜
+    //获取元素
+        var box = document.getElementById("box");
+        var img1 = document.getElementById("img1");
+        var slider = document.getElementById("slider");
+        var img2 = document.getElementById("img2");
+        var Bimg = document.getElementById("Bimg");
+        var Bimg2 = document.getElementById("Bimg2");
+    // 给左侧的小图绑定移入移除
+        img1.onmouseover = function(){
+            slider.style.display = "block";//显示
+            img2.style.display = "block";
+
+        }
+        img1.onmouseout = function(){
+            slider.style.display = "none";
+            img2.style.display = "none";
+
+        }
+        img1.onmousemove = function(ev){
+            var box = document.getElementById("box");
+            var img1 = document.getElementById("img1");
+            var slider = document.getElementById("slider");
+            var img2 = document.getElementById("img2");
+            var Bimg = document.getElementById("Bimg");
+            var Bimg2 = document.getElementById("Bimg2");
+            var ev = ev || window.event;
+            // 根据鼠标的位置来计算放大镜的位置
+            var left = ev.clientX - img1.offsetLeft - slider.offsetWidth-30;
+            var top = ev.clientY - img1.offsetTop - slider.offsetHeight;
+            var maxleft = box.offsetWidth - slider.offsetWidth;
+            var maxtop = box.offsetHeight-slider.offsetHeight;
+            // 判断
+            left = left>maxleft ? maxleft : left<0 ? 0 : left;
+            top = top > maxtop ?maxtop : top<0 ? 0 :top;
+            // 赋值，设置放大镜的位置
+            slider.style.left = left + "px";
+            slider.style.top = top + "px";
+            // 根据左侧放大镜的位置去计算右侧大图的位置  右侧大图的移动比例
+            var w = left/maxleft;
+            var h = top/maxtop;
+            // 计算大图的最大移动范围
+            var Bimgleft = img2.offsetWidth - Bimg.offsetWidth;
+            var Bimgtop = img2.offsetHeight - Bimg.offsetHeight;
+
+            // 计算大图移动的距离，设置位置
+            Bimg.style.left = w * Bimgleft + "px";
+            Bimg.style.top = h * Bimgtop + "px";
+        }
+
+</script>
+<script>
+    var pop3 = document.getElementById("pop3");
+    var pop2 = document.getElementById("pop2");
+    var be1 = document.getElementById("be1");
+    var be2 = document.getElementById("be2");
+    var Bimg = document.getElementById("Bimg");
+    var Bimg2 = document.getElementById("Bimg2");
+    pop3.onclick = function(){
+        be2.style.display = "block";
+        be1.style.display = "none";
+        Bimg.style.display = "none";
+        Bimg2.style.display = "block";
+        pop2.style.border = "none";
+        pop3.style.border = "1.5px solid #ff9003"; 
+        Bimg2.setAttribute("id","Bimg");
+        Bimg.setAttribute("id","Bimg2");
+    }
+    pop2.onclick = function(){
+        be1.style.display = "block";
+        be2.style.display = "none";
+        Bimg2.style.display = "none";
+        Bimg.style.display = "block";
+        pop3.style.border = "none";
+        pop2.style.border = "1.5px solid #ff9003"; 
+        Bimg.setAttribute("id","Bimg");
+        Bimg2.setAttribute("id","Bimg2");
+    }
+</script>
+<script type="text/javascript">
+    var like = document.getElementById("blackborder");
+    var bor = document.getElementById("boor");
+    var love = document.getElementById("love");
+    var good = document.getElementById("checkgoods");
+    love.onclick = function(){
+        bor.style.display = "block";
+        like.style.display = "block";
+        good.style.display = "block";
+    }
+
+</script>
+</html>
